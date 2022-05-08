@@ -25,7 +25,7 @@ def compute(listHotel, hotelPrice, hotels):
         for i in range(len(hotels)):
             hotelPrice[i] += hotels[i].weekdayRegular * listHotel[1]
             hotelPrice[i] += hotels[i].weekendRegular * listHotel[2]
-    elif listHotel[0] in "Rewards Reward":
+    elif listHotel[0] in "Rewards":
         for i in range(len(hotels)):
             hotelPrice[i] += hotels[i].weekdayReward * listHotel[1]
             hotelPrice[i] += hotels[i].weekendReward * listHotel[2]       
